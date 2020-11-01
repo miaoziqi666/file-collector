@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+filePath: /Users/macbook/Desktop/uploadfile/
+
+spring:
+  datasource:
+    name: mysql
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://10.11.132.121:3306/net_offset_manager?useUnicode=true&characterEncoding=UTF8&serverTimezone=Asia/Shanghai
+      username: root
+      password: qwerfdsa4552
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+# pagehelper
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
